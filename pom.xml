@@ -11,24 +11,24 @@
   <packaging>jar</packaging>
 
   <properties>
-    <spark.version>1.5.2</spark.version>
-    <kafka.version>0.8.2.2</kafka.version>
+    <spark.version>1.6.1</spark.version>
+    <kafka.version>0.9.0.1</kafka.version>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>org.apache.spark</groupId>
-      <artifactId>spark-streaming_2.10</artifactId>
+      <artifactId>spark-streaming_2.11</artifactId>
       <version>${spark.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
-      <artifactId>spark-core_2.10</artifactId>
+      <artifactId>spark-core_2.11</artifactId>
       <version>${spark.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.kafka</groupId>
-      <artifactId>kafka_2.10</artifactId>
+      <artifactId>kafka_2.11</artifactId>
       <version>${kafka.version}</version>
       <exclusions>
         <exclusion>
@@ -53,8 +53,8 @@
     </dependency>
     <dependency>
       <groupId>org.scalacheck</groupId>
-      <artifactId>scalacheck_2.10</artifactId>
-      <version>1.11.3</version>
+      <artifactId>scalacheck_2.11</artifactId>
+      <version>1.13.1</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
